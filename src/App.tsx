@@ -7,6 +7,7 @@ import { HashRouter, Route, Switch } from 'react-router-dom';
 import classes from './App.module.scss';
 import { Setup } from './pages/Setup';
 import { Manual } from './pages/Manual';
+import { Home } from './pages/Home';
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
             </Route>
             <Route exact path="/manual">
               <Manual />
+            </Route>
+            <Route exact path="/">
+              <Home />
             </Route>
           </Switch>
         </div>
