@@ -1,0 +1,16 @@
+@import './variables.scss';
+
+body {
+  background-color: $background-color;
+}
+
+.content {
+  background-color: $background-color;
+  margin-left: $navigation-width + $spacing * 2;
+  margin-top: $spacing * 2;
+  margin-right: $spacing * 2;
+}
+
+.toolbar {
+  height: $top-bar-height;
+}

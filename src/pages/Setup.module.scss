@@ -1,0 +1,15 @@
+@import '../variables.scss';
+
+.paper {
+  background-color: $paper-background-color;
+  padding: $spacing;
+  color: $primary-color;
+}
+
+.divider {
+  background-color: $grid-color;
+}
+
+.header {
+  color: $accent-color;
+}

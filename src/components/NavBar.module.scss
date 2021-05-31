@@ -1,0 +1,45 @@
+@import '../variables.scss';
+
+.drawer {
+  &-root {
+    flex-shrink: 0;
+    width: $navigation-width;
+  }
+
+  &-paper {
+    z-index: $top-bar-z-index - 1;
+    width: $navigation-width;
+    background-color: $background-color;
+    border-right: 2px solid #404040;
+    padding-top: $spacing;
+    color: $primary-color;
+    margin-top: $spacing;
+  }
+
+  &-container {
+    overflow: auto;
+  }
+}
+
+.nested {
+  padding-left: 4 * $spacing;
+}
+
+.icon {
+  color: inherit;
+}
+
+.list-item-icon {
+  min-width: 36px;
+  color: inherit;
+}
+
+.navlink {
+  text-decoration: none;
+  color: $primary-color;
+
+  &-selected {
+    color: $accent-color;
+    background-color: darken($background-color, 2);
+  }
+}

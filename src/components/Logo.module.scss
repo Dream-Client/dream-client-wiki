@@ -1,0 +1,30 @@
+@import '../variables.scss';
+
+.container {
+  height: $top-bar-height;
+  display: inline-flex;
+  border-right: 2px solid #404040;
+  width: 100%;
+}
+
+.logo {
+  margin-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: $top-bar-height - 2 * 10px;
+  display: inline-block;
+}
+
+.text {
+  display: inline-block;
+  height: $top-bar-height;
+  line-height: $top-bar-height;
+  text-align: center;
+  vertical-align: middle;
+  align-content: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 0;
+  font-size: 1.125rem;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}

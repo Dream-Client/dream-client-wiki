@@ -1,25 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { TopBar } from './components/TopBar';
+import { StylesProvider } from '@material-ui/core';
+import { NavBar } from './components/NavBar';
+import { HashRouter, Route, Switch } from 'react-router-dom';
+
+import classes from './App.module.scss';
+import { Setup } from './pages/Setup';
+import { Manual } from './pages/Manual';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <StylesProvider injectFirst>
+      <HashRouter>
+        <TopBar />
+        <NavBar />
+        <div className={classes['toolbar']} />
+        <div className={classes['content']}>
+          <Switch>
+            <Route exact path="/setup">
+              <Setup />
+            </Route>
+            <Route exact path="/manual">
+              <Manual />
+            </Route>
+          </Switch>
+        </div>
+      </HashRouter>
+    </StylesProvider>
   );
 }
 
