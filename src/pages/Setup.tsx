@@ -3,6 +3,11 @@ import { Divider, Paper, Typography } from '@material-ui/core';
 
 import classes from './Setup.module.scss';
 
+const MEGA_URL =
+  'https://mega.nz/file/J4MizBhB#wAezzUXxH9vwG64l09en6QLehGgxbrtIQk-zR2K1dmg';
+const MEDIAFIRE_URL =
+  'https://www.mediafire.com/file/l8x4n1n1d1h41lr/DreamClient.7z/file';
+
 const Setup = () => {
   return (
     <Paper className={classes['paper']}>
@@ -34,9 +39,55 @@ const Setup = () => {
       <Typography variant="h4" paragraph>
         The Setup:
       </Typography>
-      <Typography>
-        <p>.</p>
-      </Typography>
+      <ul>
+        <li>First off, you'll need the files. Get them here:</li>
+        <div className={classes['downloads']}>
+          <div className={classes['option']}>
+            <a href={MEGA_URL} target="_blank">
+              <img
+                src={process.env.PUBLIC_URL + 'images/04_MEGA_letter_logo.svg'}
+              />
+            </a>
+          </div>
+          <div className={classes['option']}>
+            <a href={MEDIAFIRE_URL} target="_blank">
+              <img
+                src={
+                  process.env.PUBLIC_URL + 'images/MediaFire-Flame-color.png'
+                }
+              />
+            </a>
+          </div>
+        </div>
+        <li>
+          Extract the contents of archive to your VRChat folder (location should
+          be similar to this): <code>D:\Steam\steamapps\common\VRChat</code>
+        </li>
+        <li>
+          <p>
+            If you did everything properly, highlighted files should appear in
+            your VRChat folder:
+          </p>
+          <img src={process.env.PUBLIC_URL + 'images/setup_files.png'} />
+        </li>
+        <li>
+          <p>
+            Go to <code>DreamVR\Preferences</code> folder and open{' '}
+            <code>licenses.txt</code>
+            file. Paste your licence key in there.
+          </p>
+        </li>
+        <li>
+          <p>Now your game should be ready to run with dream client.</p>
+        </li>
+      </ul>
+      <Divider className={classes['divider']} />
+      <p>
+        <b>
+          If despite following the instructions above you are experiencing
+          issues or are confused, contact me or dream support members.
+        </b>
+      </p>
     </Paper>
   );
 };

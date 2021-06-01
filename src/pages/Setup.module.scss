@@ -4,6 +4,7 @@
   background-color: $paper-background-color;
   padding: $spacing;
   color: $primary-color;
+  margin-bottom: $spacing * 2;
 }
 
 .divider {
@@ -13,4 +14,31 @@
 
 .header {
   color: $accent-color;
+}
+
+ul {
+  padding-left: 30px;
+}
+
+.downloads {
+  display: inline-flex;
+  padding: $spacing;
+  background-color: $background-color;
+  border: 1px solid $primary-color;
+  margin-top: $spacing;
+  margin-bottom: $spacing;
+
+  .option {
+    height: 100px;
+    width: 100px;
+
+    img {
+      height: 100px;
+      width: 100px;
+
+      &:hover {
+        background-color: darken($background-color, 2);
+      }
+    }
+  }
 }

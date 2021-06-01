@@ -22,9 +22,9 @@
 }
 
 .options {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  line-height: $top-bar-height - 2 * 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: $top-bar-height - 2 * 20px;
 }
 
 .option {
@@ -33,7 +33,7 @@
   margin-bottom: auto;
   padding-left: 20px;
   padding-right: 20px;
-  line-height: $top-bar-height - 2 * 10px;
+  line-height: $top-bar-height - 2 * 20px;
   text-align: center;
   padding-top: 0;
   padding-bottom: 0;
@@ -43,6 +43,10 @@
   letter-spacing: 0.00735em;
   color: $primary-color;
   cursor: pointer;
+  -webkit-user-select: none; /* Chrome all / Safari all */
+  -moz-user-select: none; /* Firefox all */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none; /* Likely future */
 
   &:not(:last-child) {
     border-right: 2px solid #404040;
@@ -51,8 +55,29 @@
   &:hover {
     color: $accent-color;
   }
+
+  a {
+    text-decoration: none;
+    color: $primary-color;
+
+    &:hover {
+      color: $accent-color;
+    }
+  }
+
+  .option-selected {
+    color: $accent-color;
+
+    a {
+      color: $accent-color;
+    }
+  }
 }
 
 .option-selected {
   color: $accent-color;
+
+  a {
+    color: $accent-color;
+  }
 }

@@ -11,7 +11,13 @@ const Manual = () => {
       </Typography>
       <Divider className={classes['divider']} />
       <Typography>
-        <p>Coming soon...</p>
+        <p>
+          Coming soon... In the meantime head over to this out of date{' '}
+          <a href="https://github.com/yamiM0NSTER/DreamVR/wiki/Manual">
+            manual
+          </a>
+          .
+        </p>
       </Typography>
     </Paper>
   );
