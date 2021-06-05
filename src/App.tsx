@@ -8,6 +8,7 @@ import classes from './App.module.scss';
 import { Setup } from './pages/Setup';
 import { Manual } from './pages/Manual';
 import { Home } from './pages/Home';
+import { LauncherUpgrade } from './pages/LauncherUpgrade';
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
           <Switch>
             <Route exact path="/setup">
               <Setup />
+            </Route>
+            <Route exact path="/launcher-upgrade">
+              <LauncherUpgrade />
             </Route>
             <Route exact path="/manual">
               <Manual />

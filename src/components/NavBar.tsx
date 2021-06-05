@@ -11,6 +11,7 @@ import {
 } from '@material-ui/core';
 
 import PowerSettingsNewIcon from '@material-ui/icons/PowerSettingsNew';
+import UpdateIcon from '@material-ui/icons/Update';
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 import SettingsIcon from '@material-ui/icons/Settings';
 import MenuBookIcon from '@material-ui/icons/MenuBook';
@@ -57,6 +58,18 @@ const NavBar = () => {
                   <SettingsIcon className={classes['icon']} />
                 </ListItemIcon>
                 <ListItemText primary="Setup" />
+              </ListItem>
+              <ListItem
+                button
+                className={classes['nested']}
+                component={NavLink}
+                to="/launcher-upgrade"
+                activeClassName={classes['navlink-selected']}
+              >
+                <ListItemIcon className={classes['list-item-icon']}>
+                  <UpdateIcon className={classes['icon']} />
+                </ListItemIcon>
+                <ListItemText primary="Launcher Upgrade" />
               </ListItem>
             </List>
           </Collapse>

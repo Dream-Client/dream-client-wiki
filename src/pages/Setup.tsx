@@ -2,6 +2,7 @@ import React from 'react';
 import { Divider, Paper, Typography } from '@material-ui/core';
 
 import classes from './Setup.module.scss';
+import { Downloads } from './components/Downloads';
 
 const MEGA_URL =
   'https://mega.nz/file/J4MizBhB#wAezzUXxH9vwG64l09en6QLehGgxbrtIQk-zR2K1dmg';
@@ -41,24 +42,7 @@ const Setup = () => {
       </Typography>
       <ul>
         <li>First off, you'll need the files. Get them here:</li>
-        <div className={classes['downloads']}>
-          <div className={classes['option']}>
-            <a href={MEGA_URL} target="_blank">
-              <img
-                src={process.env.PUBLIC_URL + 'images/04_MEGA_letter_logo.svg'}
-              />
-            </a>
-          </div>
-          <div className={classes['option']}>
-            <a href={MEDIAFIRE_URL} target="_blank">
-              <img
-                src={
-                  process.env.PUBLIC_URL + 'images/MediaFire-Flame-color.png'
-                }
-              />
-            </a>
-          </div>
-        </div>
+        <Downloads />
         <li>
           Extract the contents of archive to your VRChat folder (location should
           be similar to this): <code>D:\Steam\steamapps\common\VRChat</code>
@@ -73,8 +57,7 @@ const Setup = () => {
         <li>
           <p>
             Go to <code>DreamVR\Preferences</code> folder and open{' '}
-            <code>licenses.txt</code>
-            file. Paste your licence key in there.
+            <code>licenses.txt</code> file. Paste your licence key in there.
           </p>
         </li>
         <li>
