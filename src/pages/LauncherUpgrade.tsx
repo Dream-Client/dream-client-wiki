@@ -19,7 +19,13 @@ const LauncherUpgrade = () => {
         The Upgrade:
       </Typography>
       <ul>
-        <li>First off, you'll need the latest files. Get them here:</li>
+        <li>
+          <p>
+            First off, make sure to backup your files in case something goes
+            wrong.
+          </p>
+        </li>
+        <li>You'll need the latest files. Get them here:</li>
         <Downloads />
         <li>
           Extract the contents of archive to some folder (location doesn't
