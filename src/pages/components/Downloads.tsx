@@ -11,16 +11,18 @@ const Downloads = () => {
   return (
     <div className={classes['downloads']}>
       <div className={classes['option']}>
-        <a href={MEGA_URL} target="_blank">
+        <a href={MEGA_URL} target="_blank" rel="noreferrer">
           <img
             src={process.env.PUBLIC_URL + 'images/04_MEGA_letter_logo.svg'}
+            alt="mega"
           />
         </a>
       </div>
       <div className={classes['option']}>
-        <a href={MEDIAFIRE_URL} target="_blank">
+        <a href={MEDIAFIRE_URL} target="_blank" rel="noreferrer">
           <img
             src={process.env.PUBLIC_URL + 'images/MediaFire-Flame-color.png'}
+            alt="mediafire"
           />
         </a>
       </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppBar, Typography } from '@material-ui/core';
+import { AppBar } from '@material-ui/core';
 
 import classes from './TopBar.module.scss';
 import { Logo } from './Logo';

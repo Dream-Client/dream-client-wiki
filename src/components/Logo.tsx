@@ -8,6 +8,7 @@ const Logo = () => {
       <img
         src={process.env.PUBLIC_URL + 'logo192.png'}
         className={classes['logo']}
+        alt="dream_logo"
       ></img>
       <div className={classes['text']}>Dream Client</div>
     </div>

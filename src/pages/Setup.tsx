@@ -4,11 +4,6 @@ import { Divider, Paper, Typography } from '@material-ui/core';
 import classes from './Setup.module.scss';
 import { Downloads } from './components/Downloads';
 
-const MEGA_URL =
-  'https://mega.nz/file/J4MizBhB#wAezzUXxH9vwG64l09en6QLehGgxbrtIQk-zR2K1dmg';
-const MEDIAFIRE_URL =
-  'https://www.mediafire.com/file/l8x4n1n1d1h41lr/DreamClient.7z/file';
-
 const Setup = () => {
   return (
     <Paper className={classes['paper']}>
@@ -52,7 +47,10 @@ const Setup = () => {
             If you did everything properly, highlighted files should appear in
             your VRChat folder:
           </p>
-          <img src={process.env.PUBLIC_URL + 'images/setup_files.png'} />
+          <img
+            src={process.env.PUBLIC_URL + 'images/setup_files.png'}
+            alt="setup_files"
+          />
         </li>
         <li>
           <p>

@@ -4,11 +4,6 @@ import { Divider, Paper, Typography } from '@material-ui/core';
 import classes from './LauncherUpgrade.module.scss';
 import { Downloads } from './components/Downloads';
 
-const MEGA_URL =
-  'https://mega.nz/file/J4MizBhB#wAezzUXxH9vwG64l09en6QLehGgxbrtIQk-zR2K1dmg';
-const MEDIAFIRE_URL =
-  'https://www.mediafire.com/file/l8x4n1n1d1h41lr/DreamClient.7z/file';
-
 const LauncherUpgrade = () => {
   return (
     <Paper className={classes['paper']}>
@@ -38,12 +33,16 @@ const LauncherUpgrade = () => {
             Now all you need to do is replace <code>winmm.dll</code> file in
             VRChat folder:
           </p>
-          <img src={process.env.PUBLIC_URL + 'images/replace_winmm.png'} />
+          <img
+            src={process.env.PUBLIC_URL + 'images/replace_winmm.png'}
+            alt="replace_winmm"
+          />
           <p>
             And <code>DreamConsole.exe</code> in <code>DreamVR</code> folder:
           </p>
           <img
             src={process.env.PUBLIC_URL + 'images/replace_dreamconsole.png'}
+            alt="replace_dreamconsole"
           />
         </li>
         <li>
