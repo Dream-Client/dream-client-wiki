@@ -3,7 +3,7 @@ import React from 'react';
 import classes from './Downloads.module.scss';
 
 const MEGA_URL =
-  'https://mega.nz/file/J4MizBhB#wAezzUXxH9vwG64l09en6QLehGgxbrtIQk-zR2K1dmg';
+  'https://mega.nz/file/B99USSZB#VGFDVIx51Yrm0s2pziEMNMYHB_q7QXadlZ5rHyT4GQw';
 const MEDIAFIRE_URL =
   'https://www.mediafire.com/file/l8x4n1n1d1h41lr/DreamClient.7z/file';
 
